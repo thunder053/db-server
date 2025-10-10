@@ -1,0 +1,1176 @@
+{
+  "meta": {
+    "name": "WorkState Mock API",
+    "version": "0.1.0",
+    "seedFor": "MVP TB1",
+    "generatedAt": "2025-10-02T12:00:00Z"
+  },
+  "app": {
+    "supportedCurrencies": [
+      "PEN",
+      "USD",
+      "COP",
+      "MXN"
+    ],
+    "defaultCurrency": "PEN",
+    "cookieBanner": {
+      "enabled": true,
+      "required": [
+        "essential"
+      ],
+      "optional": [
+        "analytics",
+        "marketing"
+      ]
+    }
+  },
+  "currencies": [
+    {
+      "id": 1,
+      "code": "PEN",
+      "symbol": "S/",
+      "rateToUSD": 0.27
+    },
+    {
+      "id": 2,
+      "code": "USD",
+      "symbol": "$",
+      "rateToUSD": 1
+    },
+    {
+      "id": 3,
+      "code": "COP",
+      "symbol": "$",
+      "rateToUSD": 0.00025
+    },
+    {
+      "id": 4,
+      "code": "MXN",
+      "symbol": "$",
+      "rateToUSD": 0.057
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role": "renter",
+      "email": "jeremy.quijada@upc.edu.pe",
+      "password": "$2a$10$hashed",
+      "name": "Jeremy Quijada",
+      "phone": "+51 999 000 111",
+      "avatarUrl": "/imgs/perfil-integrante-jeremy.png",
+      "language": "es",
+      "currency": "PEN",
+      "notifications": {
+        "email": true,
+        "push": false
+      },
+      "createdAt": "2025-09-05T10:10:00-05:00"
+    },
+    {
+      "id": 2,
+      "role": "renter",
+      "email": "franco.huang@upc.edu.pe",
+      "password": "$2a$10$hashed",
+      "name": "Franco Huang",
+      "phone": "+51 999 000 222",
+      "avatarUrl": "/imgs/Franco.jpeg",
+      "language": "es",
+      "currency": "PEN",
+      "notifications": {
+        "email": true,
+        "push": true
+      },
+      "createdAt": "2025-09-05T11:00:00-05:00"
+    },
+    {
+      "id": 3,
+      "role": "renter",
+      "email": "ivan.lamadrid@upc.edu.pe",
+      "password": "$2a$10$hashed",
+      "name": "Ivan La Madrid",
+      "phone": "+51 999 000 333",
+      "avatarUrl": "/imgs/ivan.jpg",
+      "language": "es",
+      "currency": "PEN",
+      "notifications": {
+        "email": true,
+        "push": false
+      },
+      "createdAt": "2025-09-06T09:00:00-05:00"
+    },
+    {
+      "id": 4,
+      "role": "host",
+      "email": "arturo.saravia@cowork.pe",
+      "password": "$2a$10$hashed",
+      "name": "Arturo Saravia",
+      "phone": "+51 999 000 444",
+      "avatarUrl": "/imgs/arturo.jpg",
+      "language": "es",
+      "currency": "PEN",
+      "notifications": {
+        "email": true,
+        "push": true
+      },
+      "createdAt": "2025-09-06T09:30:00-05:00"
+    },
+    {
+      "id": 5,
+      "role": "host",
+      "email": "leonardo.cumba@spaces.pe",
+      "password": "$2a$10$hashed",
+      "name": "Leonardo Cumba",
+      "phone": "+51 999 000 555",
+      "avatarUrl": "/imgs/leonardo.jpg",
+      "language": "es",
+      "currency": "PEN",
+      "notifications": {
+        "email": true,
+        "push": true
+      },
+      "createdAt": "2025-09-06T10:10:00-05:00"
+    },
+    {
+      "id": 6,
+      "role": "admin",
+      "email": "admin@workstation.com",
+      "password": "$2a$10$hashed",
+      "name": "Admin WorkStation",
+      "phone": "",
+      "avatarUrl": "/imgs/logo-workstation.jpg",
+      "language": "es",
+      "currency": "USD",
+      "notifications": {
+        "email": true,
+        "push": true
+      },
+      "createdAt": "2025-09-01T08:00:00-05:00"
+    },
+    {
+      "id": 7,
+      "role": "renter",
+      "email": "sonia.rengifo@example.com",
+      "password": "$2a$10$hashed",
+      "name": "Sonia Rengifo",
+      "phone": "+51 999 000 777",
+      "avatarUrl": "/imgs/ImagenEntrevistaSonia.png",
+      "language": "es",
+      "currency": "PEN",
+      "notifications": {
+        "email": true,
+        "push": false
+      },
+      "createdAt": "2025-09-08T10:00:00-05:00"
+    }
+  ],
+  "profiles": [
+    {
+      "id": 11,
+      "userId": 1,
+      "bio": "Frontend-focused freelancer. Busca espacios tranquilos en Lima.",
+      "company": "",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "bio": "Full-stack dev. Prefiere salas con whiteboard.",
+      "company": "",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "bio": "Product designer. Valora la luz natural y café.",
+      "company": "",
+      "verificationStatus": "pending"
+    },
+    {
+      "id": 14,
+      "userId": 4,
+      "bio": "Host de espacios en Lima (Miraflores/Isidro).",
+      "company": "Cowork Lima SAC",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": 15,
+      "userId": 5,
+      "bio": "Host con espacios creativos en Barranco y CDMX.",
+      "company": "Spaces LATAM SRL",
+      "verificationStatus": "verified"
+    }
+  ],
+  "cities": [
+    {
+      "id": "LIM",
+      "countryCode": "PE",
+      "name": "Lima",
+      "state": "Lima",
+      "centerLat": -12.0464,
+      "centerLng": -77.0428,
+      "districts": [
+        "Miraflores",
+        "San Isidro",
+        "Barranco",
+        "Santiago de Surco"
+      ]
+    },
+    {
+      "id": "MDE",
+      "countryCode": "CO",
+      "name": "Medellín",
+      "state": "Antioquia",
+      "centerLat": 6.2476,
+      "centerLng": -75.5658,
+      "districts": [
+        "El Poblado",
+        "Laureles"
+      ]
+    },
+    {
+      "id": "BOG",
+      "countryCode": "CO",
+      "name": "Bogotá",
+      "state": "Cundinamarca",
+      "centerLat": 4.711,
+      "centerLng": -74.0721,
+      "districts": [
+        "Chapinero",
+        "Usaquén"
+      ]
+    },
+    {
+      "id": "CDMX",
+      "countryCode": "MX",
+      "name": "Ciudad de México",
+      "state": "CDMX",
+      "centerLat": 19.4326,
+      "centerLng": -99.1332,
+      "districts": [
+        "Roma Norte",
+        "Condesa",
+        "Polanco"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "id": 10001,
+      "label": "Miraflores, Lima",
+      "cityId": "LIM",
+      "district": "Miraflores",
+      "countryCode": "PE",
+      "lat": -12.1211,
+      "lng": -77.029
+    },
+    {
+      "id": 10002,
+      "label": "San Isidro, Lima",
+      "cityId": "LIM",
+      "district": "San Isidro",
+      "countryCode": "PE",
+      "lat": -12.0982,
+      "lng": -77.034
+    },
+    {
+      "id": 10003,
+      "label": "Barranco, Lima",
+      "cityId": "LIM",
+      "district": "Barranco",
+      "countryCode": "PE",
+      "lat": -12.15,
+      "lng": -77.0219
+    },
+    {
+      "id": 10004,
+      "label": "El Poblado, Medellín",
+      "cityId": "MDE",
+      "district": "El Poblado",
+      "countryCode": "CO",
+      "lat": 6.2088,
+      "lng": -75.567
+    },
+    {
+      "id": 10005,
+      "label": "Chapinero, Bogotá",
+      "cityId": "BOG",
+      "district": "Chapinero",
+      "countryCode": "CO",
+      "lat": 4.6533,
+      "lng": -74.0628
+    },
+    {
+      "id": 10006,
+      "label": "Roma Norte, CDMX",
+      "cityId": "CDMX",
+      "district": "Roma Norte",
+      "countryCode": "MX",
+      "lat": 19.4169,
+      "lng": -99.162
+    }
+  ],
+  "amenities": [
+    {
+      "id": 1,
+      "code": "wifi",
+      "name": "Wi-Fi",
+      "icon": "wifi"
+    },
+    {
+      "id": 2,
+      "code": "coffee",
+      "name": "Café",
+      "icon": "coffee"
+    },
+    {
+      "id": 3,
+      "code": "ac",
+      "name": "Aire acondicionado",
+      "icon": "ac"
+    },
+    {
+      "id": 4,
+      "code": "printer",
+      "name": "Impresora",
+      "icon": "printer"
+    },
+    {
+      "id": 5,
+      "code": "parking",
+      "name": "Estacionamiento",
+      "icon": "parking"
+    },
+    {
+      "id": 6,
+      "code": "meeting_room",
+      "name": "Sala de reuniones",
+      "icon": "meeting_room"
+    },
+    {
+      "id": 7,
+      "code": "phone_booth",
+      "name": "Cabinas telefónicas",
+      "icon": "phone"
+    },
+    {
+      "id": 8,
+      "code": "kitchen",
+      "name": "Kitchenette",
+      "icon": "kitchen"
+    },
+    {
+      "id": 9,
+      "code": "wheelchair",
+      "name": "Acceso para sillas de ruedas",
+      "icon": "accessibility"
+    },
+    {
+      "id": 10,
+      "code": "pets",
+      "name": "Pet-friendly",
+      "icon": "pets"
+    },
+    {
+      "id": 11,
+      "code": "monitor",
+      "name": "Monitores externos",
+      "icon": "monitor"
+    },
+    {
+      "id": 12,
+      "code": "whiteboard",
+      "name": "Pizarra",
+      "icon": "whiteboard"
+    }
+  ],
+  "cancellationPolicies": [
+    {
+      "id": 1,
+      "name": "Flexible",
+      "freeWindowHours": 24,
+      "feePercentAfterWindow": 50,
+      "nonRefundableInsideHours": 2,
+      "description": "Cancelación gratuita hasta 24h antes del check-in. Luego 50% de cargo; dentro de 2h no reembolsable."
+    },
+    {
+      "id": 2,
+      "name": "Moderada",
+      "freeWindowHours": 48,
+      "feePercentAfterWindow": 50,
+      "nonRefundableInsideHours": 12,
+      "description": "Gratis hasta 48h; 50% dentro de 48h; 100% dentro de 12h del check-in."
+    },
+    {
+      "id": 3,
+      "name": "Estricta",
+      "freeWindowHours": 0,
+      "feePercentAfterWindow": 100,
+      "nonRefundableInsideHours": 0,
+      "description": "Sin reembolsos tras confirmar la reserva."
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "WiFi de Alta Velocidad",
+      "icon": "",
+      "description": "",
+      "price": 20
+    },
+    {
+      "id": 2,
+      "name": "Café y Snacks",
+      "icon": "",
+      "description": "",
+      "price": 15
+    },
+    {
+      "id": 3,
+      "name": "Estacionamiento",
+      "icon": "",
+      "description": "",
+      "price": 20
+    },
+    {
+      "id": 4,
+      "name": "Sala de Reuniones",
+      "icon": "",
+      "description": "",
+      "price": 80
+    },
+    {
+      "id": 5,
+      "name": "WiFi de Alta Velocidad",
+      "icon": "wifi",
+      "description": "Conexión a internet de fibra óptica con velocidad superior a 500 Mbps",
+      "price": 0
+    },
+    {
+      "id": 6,
+      "name": "Café y Snacks",
+      "icon": "coffee",
+      "description": "Servicio de café, té y snacks ilimitados durante tu estadía",
+      "price": 15
+    },
+    {
+      "id": 7,
+      "name": "Aire Acondicionado",
+      "icon": "air",
+      "description": "Sistema de climatización central para tu comodidad",
+      "price": 40
+    },
+    {
+      "id": 8,
+      "name": "Impresora/Escáner",
+      "icon": "printer",
+      "description": "Equipos de impresión y escaneo disponibles",
+      "price": 10
+    },
+    {
+      "id": 9,
+      "name": "Recepción",
+      "icon": "reception",
+      "description": "Servicio de recepción y gestión de correspondencia",
+      "price": 25
+    },
+    {
+      "id": 10,
+      "name": "Estacionamiento",
+      "icon": "car",
+      "description": "Espacios de estacionamiento disponibles para inquilinos",
+      "price": 20
+    },
+    {
+      "id": 11,
+      "name": "Proyector/Pantalla",
+      "icon": "projector",
+      "description": "Equipamiento audiovisual profesional para presentaciones",
+      "price": 100
+    }
+  ],
+  "workspaces": [
+    {
+      "id": 1,
+      "name": "Oficina Moderna San Isidro",
+      "description": "Espacio de trabajo moderno y luminoso en el corazón de San Isidro.",
+      "type": "coworking",
+      "capacity": 9,
+      "pricePerDay": 300,
+      "basePrice": 300,
+      "isAvailable": true,
+      "averageRating": 4.7,
+      "address": {
+        "street": "Av. República de Panamá",
+        "district": "San Isidro",
+        "city": "Lima"
+      },
+      "owner": {
+        "firstName": "Carlos",
+        "lastName": "Mendoza"
+      },
+      "services": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Coworking Miraflores Hub",
+      "description": "Espacio de coworking vibrante en Miraflores, perfecto para freelancers y startups.",
+      "type": "coworking",
+      "capacity": 30,
+      "pricePerHour": 20,
+      "pricePerDay": 100,
+      "pricePerMonth": 2000,
+      "basePrice": 100,
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      "isAvailable": true,
+      "averageRating": 4.3,
+      "totalReviews": 45,
+      "address": {
+        "street": "Av. José Larco",
+        "number": "1232",
+        "district": "Miraflores",
+        "city": "Lima"
+      },
+      "owner": {
+        "firstName": "María",
+        "lastName": "Torres"
+      },
+      "services": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sala de Reuniones Premium",
+      "description": "Sala de reuniones ejecutiva con tecnología de punta.",
+      "type": "meeting-room",
+      "capacity": 12,
+      "pricePerHour": 80,
+      "pricePerDay": 500,
+      "pricePerMonth": 8000,
+      "basePrice": 500,
+      "imageUrl": "https://images.unsplash.com/photo-1431540015161-0bf868a2d407",
+      "isAvailable": true,
+      "averageRating": 4.9,
+      "totalReviews": 12,
+      "address": {
+        "street": "Calle Las Begonias",
+        "number": "441",
+        "district": "San Isidro",
+        "city": "Lima"
+      },
+      "owner": {
+        "firstName": "Carlos",
+        "lastName": "Méndez"
+      },
+      "services": [
+        1,
+        2,
+        4,
+        11
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Oficina Compartida Barranco",
+      "description": "Espacio bohemio y creativo en Barranco.",
+      "type": "coworking",
+      "capacity": 15,
+      "pricePerHour": 25,
+      "pricePerDay": 120,
+      "pricePerMonth": 2200,
+      "basePrice": 120,
+      "imageUrl": "https://images.unsplash.com/photo-1524758631624-e2822e304c36",
+      "isAvailable": false,
+      "averageRating": 4.2,
+      "totalReviews": 18,
+      "address": {
+        "street": "Jr. Colina",
+        "number": "150",
+        "district": "Barranco",
+        "city": "Lima"
+      },
+      "owner": {
+        "firstName": "Luis",
+        "lastName": "Rodríguez"
+      },
+      "services": [
+        1,
+        2,
+        3,
+        10
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Estudio Privado Surco",
+      "description": "Estudio privado ideal para profesionales independientes.",
+      "type": "coworking",
+      "capacity": 4,
+      "pricePerDay": 180,
+      "basePrice": 180,
+      "isAvailable": true,
+      "averageRating": 4.5,
+      "address": {
+        "street": "Av. Primavera",
+        "district": "Surco",
+        "city": "Lima"
+      },
+      "owner": {
+        "firstName": "María",
+        "lastName": "Torres"
+      },
+      "services": [
+        1,
+        2,
+        8
+      ]
+    }
+  ],
+  "availabilityRules": [
+    {
+      "id": 1001,
+      "workspaceId": 101,
+      "timezone": "America/Lima",
+      "slotDurationMinutes": 60,
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "startLocalTime": "08:00",
+      "endLocalTime": "20:00",
+      "exceptions": [
+        "2025-12-24",
+        "2025-12-25"
+      ]
+    },
+    {
+      "id": 1002,
+      "workspaceId": 104,
+      "timezone": "America/Mexico_City",
+      "slotDurationMinutes": 60,
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "startLocalTime": "09:00",
+      "endLocalTime": "19:00",
+      "exceptions": [
+        "2025-11-02"
+      ]
+    }
+  ],
+  "availability": [
+    {
+      "id": 2001,
+      "workspaceId": 101,
+      "date": "2025-12-15",
+      "timezone": "America/Lima",
+      "slots": [
+        {
+          "start": "08:00",
+          "end": "09:00",
+          "status": "booked"
+        },
+        {
+          "start": "09:00",
+          "end": "10:00",
+          "status": "booked"
+        },
+        {
+          "start": "10:00",
+          "end": "11:00",
+          "status": "free"
+        },
+        {
+          "start": "11:00",
+          "end": "12:00",
+          "status": "free"
+        },
+        {
+          "start": "12:00",
+          "end": "13:00",
+          "status": "free"
+        },
+        {
+          "start": "13:00",
+          "end": "14:00",
+          "status": "blocked",
+          "note": "Mantenimiento"
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "status": "free"
+        },
+        {
+          "start": "15:00",
+          "end": "16:00",
+          "status": "free"
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "status": "free"
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "status": "free"
+        },
+        {
+          "start": "18:00",
+          "end": "19:00",
+          "status": "free"
+        },
+        {
+          "start": "19:00",
+          "end": "20:00",
+          "status": "free"
+        }
+      ]
+    },
+    {
+      "id": 2002,
+      "workspaceId": 104,
+      "date": "2025-12-15",
+      "timezone": "America/Mexico_City",
+      "slots": [
+        {
+          "start": "09:00",
+          "end": "10:00",
+          "status": "free"
+        },
+        {
+          "start": "10:00",
+          "end": "11:00",
+          "status": "free"
+        },
+        {
+          "start": "11:00",
+          "end": "12:00",
+          "status": "booked"
+        },
+        {
+          "start": "12:00",
+          "end": "13:00",
+          "status": "booked"
+        },
+        {
+          "start": "13:00",
+          "end": "14:00",
+          "status": "free"
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "status": "free"
+        },
+        {
+          "start": "15:00",
+          "end": "16:00",
+          "status": "free"
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "status": "free"
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "status": "blocked",
+          "note": "Evento privado"
+        },
+        {
+          "start": "18:00",
+          "end": "19:00",
+          "status": "free"
+        }
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": 201,
+      "code": "WB-20251215-AB12",
+      "workspaceId": 101,
+      "renterId": 1,
+      "hostId": 4,
+      "status": "confirmed",
+      "start": "2025-12-15T09:00:00-05:00",
+      "end": "2025-12-15T13:00:00-05:00",
+      "timezone": "America/Lima",
+      "quantity": 1,
+      "unit": "hour",
+      "subtotal": 32,
+      "currency": "PEN",
+      "couponId": null,
+      "total": 32,
+      "cancellationPolicyId": 1,
+      "paymentId": 301,
+      "createdAt": "2025-10-01T09:00:00-05:00"
+    },
+    {
+      "id": 202,
+      "code": "WB-20251216-CD34",
+      "workspaceId": 104,
+      "renterId": 2,
+      "hostId": 5,
+      "status": "pending",
+      "start": "2025-12-16T11:00:00-06:00",
+      "end": "2025-12-16T13:00:00-06:00",
+      "timezone": "America/Mexico_City",
+      "quantity": 2,
+      "unit": "hour",
+      "subtotal": 360,
+      "currency": "MXN",
+      "couponId": 601,
+      "total": 324,
+      "cancellationPolicyId": 2,
+      "paymentId": 302,
+      "createdAt": "2025-10-01T10:00:00-05:00"
+    },
+    {
+      "id": 203,
+      "code": "WB-20251218-EF56",
+      "workspaceId": 105,
+      "renterId": 3,
+      "hostId": 4,
+      "status": "cancelled",
+      "start": "2025-12-18T10:00:00-05:00",
+      "end": "2025-12-18T18:00:00-05:00",
+      "timezone": "America/Bogota",
+      "quantity": 8,
+      "unit": "hour",
+      "subtotal": 72000,
+      "currency": "COP",
+      "couponId": null,
+      "total": 72000,
+      "cancellationPolicyId": 1,
+      "paymentId": 303,
+      "cancelledAt": "2025-12-17T20:00:00-05:00",
+      "refundPercent": 50,
+      "createdAt": "2025-10-01T11:00:00-05:00"
+    }
+  ],
+  "payments": [
+    {
+      "id": 301,
+      "bookingId": 201,
+      "provider": "mock",
+      "method": "card",
+      "status": "succeeded",
+      "amount": 32,
+      "currency": "PEN",
+      "idempotencyKey": "checkout_201",
+      "createdAt": "2025-10-01T09:05:00-05:00"
+    },
+    {
+      "id": 302,
+      "bookingId": 202,
+      "provider": "mock",
+      "method": "card",
+      "status": "pending",
+      "amount": 324,
+      "currency": "MXN",
+      "idempotencyKey": "checkout_202",
+      "createdAt": "2025-10-01T10:05:00-05:00"
+    },
+    {
+      "id": 303,
+      "bookingId": 203,
+      "provider": "mock",
+      "method": "card",
+      "status": "refunded",
+      "amount": 36000,
+      "currency": "COP",
+      "idempotencyKey": "checkout_203",
+      "createdAt": "2025-10-01T11:05:00-05:00"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 10001,
+      "workspaceId": 101,
+      "renterId": 7,
+      "rating": 5,
+      "comment": "Wi-Fi muy estable y buen café ☕. Volvería.",
+      "photos": [],
+      "createdAt": "2025-09-22T12:00:00-05:00"
+    },
+    {
+      "id": 10002,
+      "workspaceId": 104,
+      "renterId": 1,
+      "rating": 4,
+      "comment": "Sala bien equipada, pantalla grande. Faltó aire en la tarde.",
+      "photos": [],
+      "createdAt": "2025-09-25T15:00:00-06:00"
+    },
+    {
+      "id": 10003,
+      "workspaceId": 105,
+      "renterId": 2,
+      "rating": 5,
+      "comment": "Vista increíble y sillas muy cómodas.",
+      "photos": [
+        "/imgs/reviews/poblado-view.jpg"
+      ],
+      "createdAt": "2025-09-26T10:00:00-05:00"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "userId": 1,
+      "workspaceId": 101,
+      "createdAt": "2025-09-28T11:00:00-05:00"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "workspaceId": 104,
+      "createdAt": "2025-09-28T11:05:00-05:00"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "workspaceId": 105,
+      "createdAt": "2025-09-29T09:00:00-05:00"
+    }
+  ],
+  "threads": [
+    {
+      "id": 401,
+      "workspaceId": 101,
+      "bookingId": 201,
+      "participants": [
+        1,
+        4
+      ],
+      "createdAt": "2025-10-01T09:10:00-05:00"
+    },
+    {
+      "id": 402,
+      "workspaceId": 104,
+      "bookingId": 202,
+      "participants": [
+        2,
+        5
+      ],
+      "createdAt": "2025-10-01T10:10:00-05:00"
+    }
+  ],
+  "messages": [
+    {
+      "id": 501,
+      "threadId": 401,
+      "senderId": 1,
+      "text": "Hola, ¿puedo llegar 15 minutos antes para instalarme?",
+      "sentAt": "2025-12-14T17:30:00-05:00"
+    },
+    {
+      "id": 502,
+      "threadId": 401,
+      "senderId": 4,
+      "text": "Claro, te esperamos desde las 8:45. Recepción en el 2do piso.",
+      "sentAt": "2025-12-14T17:40:00-05:00"
+    },
+    {
+      "id": 503,
+      "threadId": 402,
+      "senderId": 2,
+      "text": "¿La sala incluye pizarra y marcadores?",
+      "sentAt": "2025-12-15T09:00:00-06:00"
+    },
+    {
+      "id": 504,
+      "threadId": 402,
+      "senderId": 5,
+      "text": "Sí, pizarra acrílica + monitor 55''.",
+      "sentAt": "2025-12-15T09:05:00-06:00"
+    }
+  ],
+  "coupons": [
+    {
+      "id": 601,
+      "code": "WELCOME10",
+      "percentOff": 10,
+      "amountOff": null,
+      "currency": null,
+      "minTotal": 100,
+      "expiresAt": "2026-01-01T00:00:00Z",
+      "maxRedemptions": 1000,
+      "redemptionCount": 24
+    },
+    {
+      "id": 602,
+      "code": "HOLA50PEN",
+      "percentOff": null,
+      "amountOff": 50,
+      "currency": "PEN",
+      "minTotal": 150,
+      "expiresAt": "2025-12-31T00:00:00Z",
+      "maxRedemptions": 500,
+      "redemptionCount": 12
+    }
+  ],
+  "notifications": [
+    {
+      "id": 701,
+      "userId": 1,
+      "type": "booking_confirmed",
+      "title": "Reserva confirmada",
+      "body": "Tu reserva WB-20251215-AB12 fue confirmada.",
+      "read": false,
+      "createdAt": "2025-10-01T09:06:00-05:00"
+    },
+    {
+      "id": 702,
+      "userId": 1,
+      "type": "reminder_check_in",
+      "title": "Recordatorio de check-in",
+      "body": "Mañana a las 09:00 tu reserva en Miraflores Hub.",
+      "read": false,
+      "createdAt": "2025-12-14T09:00:00-05:00"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 801,
+      "name": "Miguel Quijada",
+      "title": "Ingeniero de Software",
+      "avatarUrl": "/imgs/Entrevista-Miguel.png",
+      "rating": 5,
+      "text": "Reservé en minutos. Ideal para reuniones con el equipo."
+    },
+    {
+      "id": 802,
+      "name": "Sonia Rengifo",
+      "title": "Ingeniera de Sistemas",
+      "avatarUrl": "/imgs/ImagenEntrevistaSonia.png",
+      "rating": 5,
+      "text": "Experiencia fluida, espacios bien descritos y soporte rápido."
+    },
+    {
+      "id": 803,
+      "name": "Uziel Procopio",
+      "title": "Host Airbnb & Dev",
+      "avatarUrl": "/imgs/en1.png",
+      "rating": 4,
+      "text": "Como propietario, publicar fue sencillo y recibí más consultas."
+    }
+  ],
+  "faqs": [
+    {
+      "id": 901,
+      "question": "¿Cómo reservo un espacio?",
+      "answer": "Busca por distrito/ciudad, elige fecha y horas disponibles y completa el pago en el checkout.",
+      "tags": [
+        "reservas",
+        "búsqueda"
+      ]
+    },
+    {
+      "id": 902,
+      "question": "¿Qué métodos de pago aceptan?",
+      "answer": "Tarjeta de crédito/débito a través de un SDK seguro. Próximamente billeteras locales.",
+      "tags": [
+        "pagos"
+      ]
+    },
+    {
+      "id": 903,
+      "question": "¿Puedo cancelar mi reserva?",
+      "answer": "Sí, según la política seleccionada por el host (Flexible/Moderada/Estricta).",
+      "tags": [
+        "cancelaciones"
+      ]
+    },
+    {
+      "id": 904,
+      "question": "¿Cómo contacto al propietario?",
+      "answer": "Desde la ficha o la reserva, abre el chat y escribe tu consulta.",
+      "tags": [
+        "soporte",
+        "chat"
+      ]
+    },
+    {
+      "id": 905,
+      "question": "¿Tienen modo oscuro?",
+      "answer": "Sí. Actívalo desde Preferencias en tu perfil.",
+      "tags": [
+        "apariencia"
+      ]
+    },
+    {
+      "id": 906,
+      "question": "¿Cómo reporto un problema en el espacio?",
+      "answer": "Usa el chat de la reserva o escribe a soporte con fotos. El host recibirá una notificación.",
+      "tags": [
+        "soporte"
+      ]
+    }
+  ],
+  "featured": [
+    {
+      "id": 1001,
+      "workspaceId": 101,
+      "order": 1,
+      "reason": "popular",
+      "active": true
+    },
+    {
+      "id": 1002,
+      "workspaceId": 105,
+      "order": 2,
+      "reason": "top_rated",
+      "active": true
+    },
+    {
+      "id": 1003,
+      "workspaceId": 104,
+      "order": 3,
+      "reason": "meeting_special",
+      "active": true
+    }
+  ],
+  "helpArticles": [
+    {
+      "id": 1101,
+      "category": "reservas",
+      "title": "Seleccionar horarios y ver disponibilidad",
+      "body": "El calendario muestra bloques libres, reservados o bloqueados. Selecciona un rango continuo para continuar."
+    },
+    {
+      "id": 1102,
+      "category": "pagos",
+      "title": "Seguridad de pagos y 3-DS",
+      "body": "Usamos un SDK con validación 3-DS. Si fallas, podrás reintentar sin duplicar el cobro gracias a la idempotencia."
+    },
+    {
+      "id": 1103,
+      "category": "cuentas",
+      "title": "Recuperar contraseña",
+      "body": "Ingresa tu correo en la pantalla de 'Olvidé mi contraseña' y sigue el enlace enviado."
+    }
+  ]
+}
